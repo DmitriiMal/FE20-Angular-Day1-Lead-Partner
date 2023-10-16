@@ -1,6 +1,4 @@
-<div
-  class="container row row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3"
->
+<div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3">
   <div *ngFor="let x of touristDestinations">
     <!--  -->
     <div>
@@ -12,11 +10,13 @@
             <i class="fa-solid fa-location-dot"></i> {{ x.city }}
           </h6>
           <p class="card-text">{{ x.description }}</p>
-          <div class="d-flex">
-            <p class="me-5">Nights: {{ x.nights }}</p>
-            <h6>Price: {{ x.price }}</h6>
+          <div class="mt-auto">
+            <div class="d-flex">
+              <p class="me-5">Nights: {{ x.nights }}</p>
+              <h6>Price: {{ x.price }}</h6>
+            </div>
+            <a href="#" class="btn btn-info">Book</a>
           </div>
-          <a href="#" class="btn btn-info">Book</a>
         </div>
       </div>
     </div>
